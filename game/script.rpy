@@ -1,6 +1,9 @@
-define mc = Character("Heart")
-# game start
+define mc = Character("Madison Heart")
 
 label start:
+
+
+
+
+
     return
-# game end
