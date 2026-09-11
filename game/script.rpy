@@ -18,11 +18,15 @@ label start:
     scene black
     with fade
 
-    mc "What the?"
+    mc "Where am I?"
+
+    mc "What... is this place?"
 
     scene dreamscape at right
     with fade
 
-    ve "Enjoying yourself are you?"
+    ve "Why, hello there."
+
+    ve "Enjoying yourself I see."
 
     return
