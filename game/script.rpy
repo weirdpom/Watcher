@@ -14,7 +14,8 @@ define ve = Character(
 define nr = Character(
     "",
     color="#00557f",
-    what_color="#ffff7f",
+    what_color="#ffff00",
+    what_slow_cps=20
     )
 
 define mr = Character(
@@ -35,13 +36,39 @@ label start:
 
     nr "Finally awaken, only to discover a sea of eternal darkness."
 
-    nr "Its murky waters push you foward, refusing consultation."
+    nr "The suffocating sensation only seem to proliferate in its intensity as your try to make sense of your surroundings."
+
+    nr "Its murky waters push you onward, refusing any consultation."
 
     nr "Opening and closing your eyes have no merit. Unable or unwilling. The result remains the same."
 
-    nr "Dawn. Dusk. Such words belong to worlds touched by light. They hold no meaning upon the primordial waves."
+    nr "{b}You cannot see.{/b}"  # make bold
 
-    nr "The sea pushes onward paralyzing all. You are simply to follow."
+    nr "Dawn."
+
+    nr "Dusk."
+
+    nr "You miss them."
+
+    nr "But, such words belong to worlds touched by light. They hold no meaning upon these primordial waves."
+
+    nr "The sea pushes you foward, paralyzing all. You are simply to follow."
+
+    nr "You are nameless."
+
+    nr "You are faceless."
+
+    nr "You are formless."
+
+    nr "Yet not {i}forsaken.{/i}" # make italics
+
+    nr "Nothing but the soul remains."
+
+    nr "Your history has been omitted throughout time itself."
+
+    scene river
+
+    nr "here"
 
     scene light at right
     with fade
