@@ -1,9 +1,3 @@
-define mc = Character(
-    "Madison",
-    color="#5555ff",
-    what_color="#FFFFFF",
-    )
-
 define ve = Character(
     "Voice",
     color="#FF0000",
@@ -18,17 +12,12 @@ define nr = Character(
     what_slow_cps=20
     )
 
-define mr = Character(
-    "monster",
-    color="#FF0000",
-    what_color="#FFFFFF",
-    )
-
 image bg mixed = "images/mixed_background.png"
 
+image bg newriver = "images/NewRiver.png"
 
 label start:
-    
+
     play music "audio/hitslab-scary-creepy-horror-music-430823.mp3" volume 0.3
 
     scene bg mixed
@@ -36,11 +25,13 @@ label start:
 
     nr "Finally awaken, only to discover a sea of eternal darkness."
 
-    nr "The suffocating sensation only seem to proliferate in its intensity as your try to make sense of your surroundings."
+    nr "The suffocating sensation only seems to proliferate in its intensity as
+    you try to make sense of your surroundings."
 
     nr "Its murky waters push you onward, refusing any consultation."
 
-    nr "Opening and closing your eyes have no merit. Unable or unwilling. The result remains the same."
+    nr "Opening and closing your eyes have no merit. Unable or unwilling. The
+    result remains the same."
 
     nr "{b}You cannot see.{/b}"  # make bold
 
@@ -50,9 +41,10 @@ label start:
 
     nr "You miss them."
 
-    nr "But, such words belong to worlds touched by light. They hold no meaning upon these primordial waves."
+    nr "But, such words belong to worlds touched by light. They hold no meaning
+    upon these primordial waves."
 
-    nr "The sea pushes you foward, paralyzing all. You are simply to follow."
+    nr "The sea pushes you forward, paralyzing all. You are simply to follow."
 
     nr "You are nameless."
 
@@ -66,15 +58,32 @@ label start:
 
     nr "Your history has been omitted throughout time itself."
 
-    scene river
-
-    nr "here"
-
-    scene light at right
+    scene newriver
     with fade
 
-    ve "Why, hello there."
+    nr "This sea calls out to you."
 
-    ve "Enjoying yourself I see."
+    nr "This sea warns you."
+
+    nr "This sea implores you."
+
+    nr "Do not seek the light."
+
+    nr "You desire life, yet reek of death."
+
+    nr "Rest."
+
+    scene black
+    with fade
+
+    ve "You don't remember how much time has passed."
+
+    ve "But slowly bit by bit you begin to lose yourself."
+
+    ve "This is the end."
+
+    ve "Not even I can help you now."
 
     return
+
+
